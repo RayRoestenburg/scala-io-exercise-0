@@ -20,11 +20,11 @@ class EchoActorSpec extends Specification {
 
 //TODO make this test work, uncomment the commented lines below
 
-//      val echoActor = system.actorOf(props, name)
-//
-//      echoActor ! "echo"
-//
-//      expectMsg("echo")
+      val echoActor = system.actorOf(props, name)
+
+      echoActor ! "echo"
+
+      expectMsg("echo")
 
       expectNoMsg()
 
