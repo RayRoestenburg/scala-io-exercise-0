@@ -16,20 +16,17 @@ object Main extends App {
   println("Press Enter to terminate.")
 
   val print = system.actorOf(PrintActor.props, PrintActor.name)
-  //TODO: Send a Print message to the print actor
-  print ! PrintActor.Print("Actors rock!")
+  //TODO: Send a Print message to the print actor, sending is done with the '!' operator
   println("This is from main.")
 
-  val echo = system.actorOf(EchoActor.props, EchoActor.name) //TODO: Create the EchoActor similar to the print actor
+  //val echo = ??? //TODO: Create the EchoActor similar to the print actor
   //TODO: Send an echo message to the echo actor and print the response using the ask pattern
-  echo.ask("Echooooo").foreach(echo => println(echo))
 
-  val forward = system.actorOf(ForwardActor.props(print), ForwardActor.name) //TODO: Create the forward actor with the print actor as its parameter
+  val forward = ??? //TODO: Create the forward actor with the print actor as its parameter
   //TODO: Send the forward actor a Print message
-  forward ! PrintActor.Print("Via the forward actor!")
 
-  val printEcho = system.actorOf(PrintEchoActor.props, PrintEchoActor.name) //TODO: Create the PrintEcho actor
-  printEcho ! PrintEchoActor.PrintEcho("Wow, printed echos!")
+  val printEcho = ??? //TODO: Create the PrintEcho actor
+  //TODO send a PrintEcho message to the PrintEcho actor
 
   System.console.readLine()
   system.shutdown()
