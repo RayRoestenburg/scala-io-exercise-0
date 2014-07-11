@@ -7,7 +7,7 @@ object PrintActor {
   //TODO define messages for print actor here (Print)
   case class Print(text: String)
   //TODO define props and name for PrintActor here
-  val props = Props[PrintActor]
+  val props = Props(new PrintActor)
   val name = "print-actor"
 }
 
@@ -18,5 +18,4 @@ class PrintActor extends Actor {
     //TODO handle the Print message here by println'ing the text in the Print message
     case Print(text) => println(s"PrintActor: $text")
   }
-
 }
