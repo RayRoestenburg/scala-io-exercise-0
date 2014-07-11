@@ -9,13 +9,13 @@ object PrintEchoActor {
   //TODO define props and name for PrintActor here
 }
 
-class PrintEchoActor extends Actor {
-  import PrintEchoActor._
+// TODO: Uncomment
+// class PrintEchoActor extends Actor {
+//   import PrintEchoActor._
 
-  // Create an EchoActor as a child of this actor using the context.actorOf method
+//   // Create an EchoActor as a child of this actor using the context.actorOf method
 
-  def receive = {
-    //TODO handle the PrintEcho message here by sending the text string in it to the EchoActor
-    //TODO print the String that was received from the EchoActor
-  }
-}
+//   //TODO Implement the receive method and
+//     //TODO handle the PrintEcho message here by sending the text string in it to the EchoActor
+//     //TODO print the String that was received from the EchoActor
+// }

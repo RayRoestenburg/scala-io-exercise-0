@@ -22,10 +22,10 @@ object Main extends App {
   //val echo = ??? //TODO: Create the EchoActor similar to the print actor
   //TODO: Send an echo message to the echo actor and print the response using the ask pattern
 
-  val forward = ??? //TODO: Create the forward actor with the print actor as its parameter
+  // val forward = ??? //TODO: Create the forward actor with the print actor as its parameter
   //TODO: Send the forward actor a Print message
 
-  val printEcho = ??? //TODO: Create the PrintEcho actor
+  // val printEcho = ??? //TODO: Create the PrintEcho actor
   //TODO send a PrintEcho message to the PrintEcho actor
 
   System.console.readLine()

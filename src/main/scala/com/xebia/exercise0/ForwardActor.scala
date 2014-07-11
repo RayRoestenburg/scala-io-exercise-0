@@ -7,7 +7,8 @@ object ForwardActor {
   //TODO define props and name for PrintActor here.  use the following Props syntax: Props(new ForwardActor, param1)
 }
 
-class ForwardActor(to: ActorRef) extends Actor {
+//TODO: Uncomment
+// class ForwardActor(to: ActorRef) extends Actor {
 
-  //TODO write your receive method here, forward any received message to the 'to' actor with the forward method on the ActorRef
-}
+//   //TODO write your receive method here, forward any received message to the 'to' actor with the forward method on the ActorRef
+// }
