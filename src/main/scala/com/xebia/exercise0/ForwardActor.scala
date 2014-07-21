@@ -4,7 +4,7 @@ package exercise0
 import akka.actor.{Actor, Props, ActorRef}
 
 object ForwardActor {
-  //TODO define props and name for PrintActor here.  use the following Props syntax: Props(new ForwardActor, param1)
+  //TODO define props and name for PrintActor here. Use the following Props syntax: Props(new ForwardActor(param1))
 }
 
 //TODO: Uncomment
